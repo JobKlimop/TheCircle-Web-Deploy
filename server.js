@@ -7,11 +7,11 @@ const path = require('path');
 app.use(express.static(__dirname, 'dist', {index: false}));
 
 app.get('', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
+    res.sendFile(path.join('src', 'index.html'));
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
+    res.sendFile(path.join('src', 'index.html'));
 });
 
 const port = process.env.PORT || '4200';
