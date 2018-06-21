@@ -4,10 +4,10 @@ const http = require('http');
 const app = express();
 const path = require('path');
 
-app.use(express.static(path.join(__dirname, '../dist/TheCircle-Web')));
+app.use(express.static('./dist/TheCircle-Web'));
 
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, '../dist/TheCircle-Web/index.html'));
+    res.sendFile(path.join('./dist/TheCircle-Web/index.html'));
 });
 
 const port = process.env.PORT || '4200';
