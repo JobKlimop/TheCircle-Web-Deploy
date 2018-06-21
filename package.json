@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --env=prod",
-    "postinstall": "ng build -prod --aot",
-    "build:prod": "ng buid -prod node server.js",
+    "postinstall": "ng build --prod --env=prod ",
+    "build:prod": "ng build --prod --env=prod && node server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
