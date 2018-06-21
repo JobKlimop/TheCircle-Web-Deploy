@@ -1,0 +1,26 @@
+.loginGroup {
+  border: 1px solid #333333;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #333333;
+}
+
+.btn {
+  display:block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  border-radius: 0px;
+  background-color: #F57C37;
+  border-color: #F57C37;
+}
+
+input {
+  border-radius: 0px;
+  border-color: #4C4C4A;
+}
+
+label {
+  color: white;
+}

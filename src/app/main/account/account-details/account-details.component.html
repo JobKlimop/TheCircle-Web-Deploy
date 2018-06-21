@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <img class="userImage" src="{{user.avatar}}" alt="">
+      <!--<img class="editImage" src="{{editBtn}}" (click)="editImage()">-->
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 infoDiv">
+      <h1 class="dialogText">{{user.username}}</h1>
+      <h3 class="dialogText"><b>Slogan</b>: "{{user.slogan}}"</h3>
+      <h3 class="dialogText"><b>E-mail</b>: <a target="_blank" href="mailto:{{user.email}}">{{user.email}}</a></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!--<button type="submit" class="btn btn-primary saveBtn" (click)="saveChanges()">Save</button>-->
+      <button class="btn closeBtn" (click)="onNoClick()">Close</button>
+    </div>
+  </div>
+</div>

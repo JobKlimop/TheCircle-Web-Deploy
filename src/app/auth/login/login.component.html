@@ -1,0 +1,22 @@
+<div class="sub-main-w3">
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <h2>Login Now
+      <i class="fas fa-level-down-alt"></i>
+    </h2>
+    <div class="form-style-agile">
+      <label>
+        <i class="fas fa-user"></i>
+        Username
+      </label>
+      <input placeholder="Username" type="text" id="username" formControlName="username" class="form-control">
+    </div>
+    <div class="form-style-agile">
+      <label>
+        <i class="fas fa-unlock-alt"></i>
+        Password
+      </label>
+      <input placeholder="Password" type="password" id="password" formControlName="password" class="form-control">
+    </div>
+    <input type="submit" value="Log In">
+  </form>
+</div>

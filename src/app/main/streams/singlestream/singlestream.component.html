@@ -1,0 +1,25 @@
+<a (click)="toStream()">
+<li class="streams list-unstyled col-xs-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-wrapper">
+        <div class="card-img">
+          <!--<img src="{{stream.publisher.ip}}">-->
+          <img src="{{ip}}">
+        </div>
+        <div class="card-box">
+          <h4 class="card-title mbr-fonts-style display-7">
+            {{stream.publisher.stream}}
+          </h4>
+          <p>{{users?.slogan}}</p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <p class="mbr-text mbr-fonts-style display-7">
+                <img class="viewericon" src="{{viewerIcon}}">   {{subscriberCount}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</a>

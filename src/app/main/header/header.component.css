@@ -1,0 +1,9 @@
+.logoIcon {
+  height: 5%;
+}
+
+.caret {
+  left: 90%;
+  top: 45%;
+  position: absolute;
+}
