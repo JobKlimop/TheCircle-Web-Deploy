@@ -4,14 +4,14 @@ const http = require('http');
 const app = express();
 const path = require('path');
 
-app.use(express.static('dist', {index: false}));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('', function(req, res) {
-    res.sendFile(path.join('src', 'index.html'));
+    res.sendFile(path.join('index.html', { root: __dirname }));
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join('src', 'index.html'));
+    res.sendFile(path.join('index.html', { root: __dirname }));
 });
 
 const port = process.env.PORT || '4200';
