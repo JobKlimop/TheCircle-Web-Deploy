@@ -20,7 +20,6 @@ import { StreamsComponent } from './main/streams/streams.component';
 import { SinglestreamComponent } from './main/streams/singlestream/singlestream.component';
 import { FooterComponent } from './main/footer/footer.component';
 
-
 // Services.
 import { AuthService } from './_services/auth.service';
 import { AuthGuard } from './_services/auth-guard.service';
