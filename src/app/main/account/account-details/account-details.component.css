@@ -1,0 +1,69 @@
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  /*background: rgba(0, 0, 0, 0.5); !* Black see-through *!*/
+  width: 180px;
+  transition: .5s ease;
+  opacity:0;
+  color: #e72c2d;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container {
+  background-color: #333333;
+}
+
+.userImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.editImage {
+  position: absolute;
+  margin-left: 55%;
+  margin-right: auto;
+  width: 10%;
+}
+
+.btn {
+  width: 100%;
+  color: white;
+  background-color: rgb(231, 44, 45);
+  border: 1px solid rgb(231, 44, 45);
+}
+
+.btn:hover{
+  width: 100%;
+  color: rgb(254, 254, 254);
+  background-color: #ff5953;
+  border: 1px solid rgb(231, 44, 45);
+  font-weight: bold;
+}
+
+.dialogText {
+  color: white;
+  margin: 30px;
+}
+
+b{
+  font-weight: bold;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a {
+    outline: none;
+}

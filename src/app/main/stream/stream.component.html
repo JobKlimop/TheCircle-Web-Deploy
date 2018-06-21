@@ -1,0 +1,35 @@
+<!-- Streamer details. -->
+<div style="background-color: #f9f9f9; padding-bottom: 25px;">
+<div class="container-fluid">
+<div class="row" id="background-image" style="margin-top: 77px; padding-top: 10px; padding-bottom: 10px;" >
+  <div class="container">
+    <div class="col-md-10">
+      <div id="foto">
+      <img
+      src="{{avatar}}"
+      class="img-thumbnail">
+      </div>
+      <div id="tekst">
+      <h1 style="color: white;">{{username}} </h1>
+      <h2 style="color: white; margin-left: 5px;"><b>"{{slogan}}"</b></h2>
+      <h2 style="font-style: normal;"><span style="color: red; text-shadow:0px 0px 10px black; margin-left: 10px;">[LIVE]</span> People watching:  <b style="text-shadow:0px 0px 10px;">{{viewCount}} </b></h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Video and chat. -->
+<div class="container" style="padding-top: 5px; margin-bottom: 50px; margin-top: 20px">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <app-video></app-video>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <app-chat [streamer] = username></app-chat>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,38 @@
+<div id="bg">
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-12 col-lg-12">
+    <img src="../../assets/img/logo.png" class="img-responsive center-block circleLogo">
+  </div>
+</div>
+<app-login></app-login>
+<input id="reloadValue" type="hidden" name="reloadValue" value="" />
+<!-- Jquery -->
+<link rel="stylesheet" href="../../assets/theme/css/loginstyle.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../assets/theme/css/fontawesome-all.css">
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="../../assets/theme/js/jquery-3.3.1.min.js"></script>
+<script src="../../assets/theme/js/canva_moving_effect.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function()
+  {
+    var d = new Date();
+    d = d.getTime();
+    if (jQuery('#reloadValue').val().length == 0)
+    {
+      jQuery('#reloadValue').val(d);
+      jQuery('body').show();
+    }
+    else
+    {
+      jQuery('#reloadValue').val('');
+      location.reload();
+    }
+  });
+</script>
+
+
+
