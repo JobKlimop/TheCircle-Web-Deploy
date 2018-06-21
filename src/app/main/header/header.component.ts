@@ -13,7 +13,7 @@ import {User} from '../../_models/user.model';
 export class HeaderComponent implements OnInit {
   logoLocation = '../../assets/img/logo.png';
 
-  constructor(private authService: AuthService,
+  constructor(public authService: AuthService,
               private router: Router,
               public dialog: MatDialog) { }
 
