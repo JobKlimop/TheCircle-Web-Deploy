@@ -3,8 +3,6 @@ const path = require('path');
 const http = require('http');
 
 const app = express();
-
-const app = express();
 const path = require('path');
 app.use(express.static('./dist/seechange'));
 app.get('/*', function(req, res) {
