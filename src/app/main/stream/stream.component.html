@@ -10,8 +10,8 @@
       class="img-thumbnail">
       </div>
       <div id="tekst">
-      <h1 style="color: white;">{{username}} </h1>
-      <h2 style="color: white; margin-left: 5px;"><b>"{{slogan}}"</b></h2>
+      <h1 style="color: white;"> {{streamer}} </h1>
+      <h2 style="color: white; margin-left: 5px;"><b>{{slogan}}</b></h2>
       <h2 style="font-style: normal;"><span style="color: red; text-shadow:0px 0px 10px black; margin-left: 10px;">[LIVE]</span> People watching:  <b style="text-shadow:0px 0px 10px;">{{viewCount}} </b></h2>
       </div>
     </div>
@@ -27,7 +27,7 @@
         <app-video></app-video>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <app-chat [streamer] = username></app-chat>
+        <app-chat [streamer] = streamer></app-chat>
       </div>
     </div>
   </div>

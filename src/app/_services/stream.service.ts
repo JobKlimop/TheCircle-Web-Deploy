@@ -14,7 +14,7 @@ export class StreamService {
   private videoUrl = environment.videoDataApiUrl;
   private streamer: string;
   private accountUrl = environment.accountApiUrl;
-  private countUrl = 'http://localhost:8000/api/streams/live/';
+  private countUrl = 'http://145.49.27.5:8000/api/streams/live';
 
   constructor(private http: HttpClient) {
 

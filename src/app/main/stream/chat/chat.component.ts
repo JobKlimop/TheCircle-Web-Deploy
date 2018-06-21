@@ -24,7 +24,6 @@ export class ChatComponent implements OnInit {
 
   ngOnInit() {
 
-
     this.chatService.connectionChanged
     .subscribe((res) => {
       this.chatService.joinRoom(this.streamer)

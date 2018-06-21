@@ -21,7 +21,7 @@ export class StreamComponent implements OnInit {
 
   constructor(private router: Router, private chatService: ChatService, private streamService: StreamService) {
     // Set some default user information.
-    this.avatar = 'https://puu.sh/AD8Jo/4e7870d676.png';
+    this.avatar = this.avatar;
    }
 
   ngOnInit() {
@@ -29,6 +29,7 @@ export class StreamComponent implements OnInit {
     .subscribe((newViewers) => {
       this.viewers = newViewers;
     });
+    
     this.streamer = this.streamService.getStreamer();
 
     this.streamService.getStreamInfo(this.streamer)

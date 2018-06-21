@@ -38,16 +38,17 @@ export class ChatService {
 
     addEventHandlers(){
         socket.on('connect', () => {
-            socket.emit("verify_identity", {"certificate":this.authservice.crt})
+            socket.emit("verify_identity", {"certificate": this.authservice.crt})
         })
 
         socket.on('verified', (verified) => {
             this.connectionChanged.emit('true')
             console.log(verified)
+            socket.emit("connection_info")
         })
 
         socket.on("history", (history) => {
-            console.log(history.history)
+            this.messages = []
             for(let m of history.history){
                 if(this.encryptionService.verify(m)){
                     this.messages.push(m)
@@ -121,7 +122,7 @@ export class ChatService {
                 this.addMessage(message)
                 console.log(message)
             }else{
-
+                console.log('yop ik s')
             }
         });
 
@@ -165,6 +166,7 @@ export class ChatService {
     // room you are sending the message to.
     sendMessage(message) {
         socket.emit("message", message);
+        console.log(message)
         socket.emit("connection_info");
     }
 

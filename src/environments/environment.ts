@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   accountApiUrl: 'https://the-circle-account.herokuapp.com/api/account',
-  videoDataApiUrl: 'http://localhost:8000/api',
-  videoStreamApiUrl: 'http://localhost:8000/live'
+  videoDataApiUrl: 'http:///145.49.27.5:8000/api',
+  videoStreamApiUrl: 'http:///145.49.27.5:8000/live'
 };
 
 /*
