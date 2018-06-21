@@ -19,7 +19,7 @@ import { HomeComponent } from './main/home/home.component';
 import { StreamsComponent } from './main/streams/streams.component';
 import { SinglestreamComponent } from './main/streams/singlestream/singlestream.component';
 import { FooterComponent } from './main/footer/footer.component';
-
+import { VideoplayerComponent } from './videoplayer/videoplayer.component';
 
 // Services.
 import { AuthService } from './_services/auth.service';
@@ -52,7 +52,8 @@ import { VideoplayerDirective } from './_directives/videoplayer.directive';
     StreamComponent,
     VideoComponent,
     ChatComponent,
-    VideoplayerDirective
+    VideoplayerDirective,
+    VideoplayerComponent
   ],
   imports: [
     BrowserModule,
