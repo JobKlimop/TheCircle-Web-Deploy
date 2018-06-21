@@ -10,15 +10,15 @@ const app = express();
 // app.use(bodyParser.urlencoded({ extended: false }));
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, './dist')));
 
 // Set our api routes
 // app.use('/api', api);
 
 // Catch all other routes and return the index file
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, './dist/index.html'));
+// });
 
 // app.get('*', function (req, res) {
 //     const index = path.join(__dirname, 'build', 'index.html');
