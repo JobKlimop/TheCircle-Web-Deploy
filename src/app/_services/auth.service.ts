@@ -59,9 +59,6 @@ export class AuthService {
     this.token = token;
     this.crt = certificate;
 
-    console.log(this.privateKey);
-    console.log(this.crt);
-
     // If no avatar present, set default.
     if (avatar == null)
     {
